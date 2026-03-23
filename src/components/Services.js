@@ -12,14 +12,14 @@ function Services() {
   return (
     <section id="services" className="bg-gray-100 p-10">
 
-      <h2 className="text-3xl text-center font-bold mb-8">
+      <h2 className="mb-8 text-center text-3xl font-bold">
         Our Services
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid gap-6 md:grid-cols-3">
 
         {services.map((s, i) => (
-          <div key={i} className="bg-white p-6 shadow rounded  hover:-translate-y-1 hover:scale-80 hover:bg-indigo-200">
+          <div key={i} className="hover:scale-80 rounded bg-white p-6  shadow hover:-translate-y-1 hover:bg-indigo-200">
             {s}
           </div>
         ))}

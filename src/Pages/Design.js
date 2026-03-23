@@ -1,8 +1,8 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 
-function Featured() {
-  const [products, setProducts] = useState([]);
+function Design() {
+    const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const categories = [
@@ -15,7 +15,6 @@ function Featured() {
   // 1. Fetch products from your backend
   useEffect(() => {
     const fetchProducts = async () => {
-      // const res = await axios.get("http://localhost:8000/api/products");
       const res = await axios.get("https://n-c-full-stack.onrender.com/api/products");
       setProducts(res.data);
     };
@@ -81,7 +80,7 @@ function Featured() {
         )}
       </div>
     </section>
-  );
+  )
 }
 
-export default Featured;
+export default Design

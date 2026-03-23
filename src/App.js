@@ -6,17 +6,21 @@ import Gallery from './components/Gallery';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Services from './components/Services';
+import Routers from './routers/Routers';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero />
+      <div>
+      <Routers />
+      </div>
+      {/* <Hero />
       <Featured />
       <Services />
       <Gallery />
-      <Contact />
-      <Footer />
+      <Contact /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
